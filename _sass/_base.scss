@@ -161,7 +161,7 @@ pre {
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
     @extend %clearfix;
-
+    
     @include media-query($on-laptop) {
         max-width: -webkit-calc(800px - (#{$spacing-unit}));
         max-width:         calc(800px - (#{$spacing-unit}));
@@ -170,7 +170,13 @@ pre {
     }
 }
 
+/**
+ * Helpers
+ */
 
+.bg-white {
+    background-color: #fff;
+}
 
 /**
  * Clearfix

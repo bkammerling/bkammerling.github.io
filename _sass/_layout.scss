@@ -2,30 +2,82 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
-
+    min-height: 400px;
+    @include media-query($on-laptop) {
+        min-height: 300px; 
+    }
+    
     // Positioning context for the mobile navigation icon
     position: relative;
 }
 
+.fixed-bg {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -10;
+    height: 400px;
+    @include media-query($on-laptop) {
+        height: 300px; 
+    }
+    width: 100%;
+}
+
+.fullscreen-bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover; 
+}
+
+
+.header-top {
+    background-color: rgba(255,255,255,0.6);
+    position: fixed;
+    width: 100%;
+    border-top: 5px solid $grey-color-dark;
+    box-shadow: 0 0 8px rgba(0,0,0,0.7);
+}
+
+hgroup {
+    @include media-query-above($on-palm) {
+        float: left;
+    }
+    padding-top: 15px;
+}
+
 .site-title {
     font-size: 26px;
-    line-height: 56px;
+    line-height: 28px;
     letter-spacing: -1px;
+    text-transform: uppercase;
+    font-weight: 500;
     margin-bottom: 0;
-    float: left;
 
     &,
-    &:visited {
+    a:visited {
         color: $grey-color-dark;
     }
 }
 
+.site-tagline {
+    font-size: 20px;
+}
+
 .site-nav {
-    float: right;
     line-height: 56px;
+    @include media-query-above($on-palm) {
+        float: right;
+    }
 
     .menu-icon {
         display: none;
@@ -94,6 +146,7 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    background-color: #fff;
 }
 
 .footer-heading {
@@ -163,6 +216,7 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    background-color: #fff;
 }
 
 .page-heading {

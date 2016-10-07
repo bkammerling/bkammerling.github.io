@@ -38,6 +38,11 @@ $on-laptop:        800px;
         @content;
     }
 }
+@mixin media-query-above($device) {
+    @media screen and (min-width: $device+1) {
+        @content;
+    }
+}
 
 
 
