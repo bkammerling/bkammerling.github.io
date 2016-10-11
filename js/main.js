@@ -12,6 +12,13 @@ $(document).ready(function(){
 			var scrolledY = $(window).scrollTop();
       console.log(scrolledY);
 			$('.fixed-bg').css('top', ((scrolledY*-0.5)) + 'px');
+			
+			//while ($('header .white-bg').css('opacity') < 1) {
+        $('header .white-bg').css('opacity', (scrolledY*0.001)+0.7);
+      //}
+			
+			
+			
 		}
     
 });

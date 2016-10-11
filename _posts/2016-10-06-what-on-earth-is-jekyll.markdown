@@ -1,16 +1,24 @@
 ---
 layout: post
-title: 'A Grand Welcome to Jekyll!'
+title: 'What on earth is Jekyll?'
 date: 2016-10-06 09:25:00
 categories:
-  - jekyll
-  - update
+  - web development
+  - tools
 ---
 
+It's a kind of tool to create static websites.
 
-You’ll find this new edited post in your `_posts`{: .highlighter-rouge} directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`{: .highlighter-rouge}, which launches a web server and auto-regenerates your site when a file is updated.
+## What's a static website?
+Well if you've ever built a website, you probably started by simply creating one file, an HTML document.
+Then maybe you added a CSS file and eventually some JS.
+Then Wordpress and Joomla etc came along and they were so powerful they were the natural progression but things just seem to have got a bit bogged down.
+And so now we seem to have done a complete loop and we're creating the simple sites again. No need for the pain that is databases, no need for any PHP or server side scripting. Good old fashioned web dev!
 
-![](/uploads/versions/photo-on-11-07-2016-at-12-30---x----1080-720x---.jpg)
+## More about Jekyll
+OK, so you still gotta do a bit of command line business. This always puts me off as I like to see exactly what I'm downloading but fear not, once you've installed it you won't need it again. Follow the instructions on the [Jekyll docs](http://jekyllrb.com) to install.
+
+What you should eventually have is a few folders that should look fairly familiar. Styles in Sass, pages, posts, layouts.
 
 To add new posts, simply add a file in the `_posts`{: .highlighter-rouge} directory that follows the convention `YYYY-MM-DD-name-of-post.ext`{: .highlighter-rouge} and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 

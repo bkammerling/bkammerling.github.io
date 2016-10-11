@@ -3,8 +3,21 @@ layout: default
 ---
 
 <div class="home">
-
-  <h1 class="page-heading editable">My Posts</h1>
+  
+  <div class="row">
+    <div class="two columns">
+      <img class="me-img" src="uploads/me.jpg" alt="profile photo of Ben Kammerling" />
+    </div>
+    <div class="ten columns">
+      <h1>Hey, Hallo, Hola, Ciao, I'm Ben</h1>
+      <p>Welcome. Mi casa es tu casa. Make yourself at home.</p>
+      <p>Who am I? Well I'm one of you. I also make websites, play guitar, travel and ride <i class="fa fa-bicycle"></i>, sometimes at the same time. I like to take long walks, drink <i class="fa fa-coffee"></i> and eat cakes. I'm also a big fan of sloths.</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <h2 class="page-heading editable">Stuff I Wrote</h2>
 
   <ul class="post-list">
     {% for post in site.posts %}
@@ -17,7 +30,5 @@ layout: default
       </li>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>
