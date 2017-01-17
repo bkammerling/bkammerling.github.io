@@ -9,11 +9,11 @@ categories:
 
 Have you ever spent 20 minutes making edits in the chrome inspector and after marvelling at your maginificent work realise that you can't remember which elements you edited and there were so many that it's gonna take another 20 minutes to find them and copy them over to the actual file. If you're anything like me, you'll say 'yes, yes I have'. It's frustrating, eh! Well not any more:
 
-![alt text](../uploads/inspector-screenshot.png "Chrome Inspector showing some newly selected elements with their styles in CSS")
+![Chrome Inspector showing some newly selected elements with their styles in CSS]({{ site.url }}/uploads/inspector-screenshot.png)
 
 Low and behold, hidden away under the 'Sources' tab, scroll down to localhost and you'll see the inspector stylesheet! This will include any newly selected elements you've added and their corresponding styles. 'But what if I just edited a few elements that were already defined in my css', I hear you cry. Well fear not:
 
-![alt text](../uploads/chrome-inspector2.png "Chrome Inspector showing some elements' styles that already had some styles in the current CSS file")
+![Chrome Inspector showing some elements' styles that already had some styles in the current CSS file]({{ site.url }}/uploads/chrome-inspector2.png)
 
 Here you have it, maybe you just unticked a font size, dropped a few pixels from a margin, or if you're feeling very 2016 maybe you changed a flex-direction. Either way, you can see everything. No more 'I think I floated this and added a fish to that'. See exactly what you've done and copy it over.
 
