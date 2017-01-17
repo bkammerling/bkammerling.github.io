@@ -6,6 +6,9 @@
     @include media-query($on-laptop) {
         min-height: 300px; 
     }
+    @include media-query($on-palm) {
+        min-height: 200px; 
+    }
     
     // Positioning context for the mobile navigation icon
     position: relative;
