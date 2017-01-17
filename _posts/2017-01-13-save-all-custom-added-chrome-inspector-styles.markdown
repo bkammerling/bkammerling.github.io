@@ -5,9 +5,11 @@ date: 2017-01-12 09:25:00
 categories:
   - web development
   - tools
+excerpt_separator: <!--more-->
+
 ---
 
-Have you ever spent 20 minutes making edits in the chrome inspector and after marvelling at your maginificent work realise that you can't remember which elements you edited and there were so many that it's gonna take another 20 minutes to find them and copy them over to the actual file. If you're anything like me, you'll say 'yes, yes I have'. It's frustrating, eh! Well not any more:
+Have you ever spent 20 minutes making edits in the chrome inspector<!--more--> and after marvelling at your maginificent work realise that you can't remember which elements you edited and there were so many that it's gonna take another 20 minutes to find them and copy them over to the actual file. If you're anything like me, you'll say 'yes, yes I have'. It's frustrating, eh! Well not any more:
 
 ![Chrome Inspector showing some newly selected elements with their styles in CSS]({{ site.url }}/uploads/inspector-screenshot.png)
 

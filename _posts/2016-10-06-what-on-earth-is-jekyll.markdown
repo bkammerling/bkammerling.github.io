@@ -7,7 +7,7 @@ categories:
   - tools
 ---
 
-It's a kind of tool to create static websites.
+It's a cheeky little tool to create static websites.
 
 ## What's a static website?
 Well if you've ever built a website, you probably started by simply creating one file, an HTML document.
