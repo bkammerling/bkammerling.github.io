@@ -4,7 +4,7 @@ title:  "Heroku & Data Persistence With AWS S3"
 author: ben
 categories: [ Web ]
 tags: [ AWS, Data ]
-image: assets/images/Heroku-poster.jpg
+image: assets/images/heroku-poster.jpg
 ---
 
 If you've ever used [Heroku](https://devcenter.heroku.com/) as a hassle-free way of deploying an app for a project, with an equally hassle-free document based database like [Forerunner](https://github.com/Irrelon/ForerunnerDB), you may have run into their [data persistence issue](https://devcenter.heroku.com/articles/active-storage-on-heroku#:~:text=Heroku%20has%20an%20%E2%80%9Cephemeral%E2%80%9D%20hard,after%20the%20application%20is%20restarted.).
