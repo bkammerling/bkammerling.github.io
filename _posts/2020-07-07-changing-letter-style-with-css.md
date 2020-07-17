@@ -4,7 +4,7 @@ title:  "Changing Letter Style in CSS"
 author: ben
 categories: [ Web ]
 tags: [ CSS, Design ]
-image: assets/images/double-storey-example.jpg
+image: assets/images/font-style-poster-green.jpg
 ---
 
 You know the two types of 'a', right? The one with the hook up top, like a rotated e, and the other one thats more circular. I did, but it had never crossed my mind that a typeface (or CSS font-family) can provide both and we can actually choose which one we'd prefer!

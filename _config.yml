@@ -2,24 +2,25 @@
 name: "Ben Kammerling"
 title: "Ben Kammerling - Tech Guy"
 description: "Exploring the fabulous world of tech, for humans and business. Cycling, tea, and food too!"
-logo: 'assets/images/logo.png'
+logo: 'assets/images/logo-3d.svg'
 favicon: 'assets/images/logo.png'
 baseurl: ""
 google_analytics: 'UA-xxxxxxxx-1'
 include: ["_pages"]
 permalink: /:title/
-email: wowthemesnet@gmail.com
+email: hi@benkammerling.com
 
 # Authors
 authors:
-  sal:
-    name: Sal
-    display_name: Sal
-    gravatar: e56154546cf4be74e393c62d1ae9f9d4
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net/donate/
-    twitter: https://twitter.com/wowthemesnet
-    description: "Author of Mediumish, a Bootstrap Medium styled template available for WordPress, HTML, Ghost and Jekyll. You are currently previewing Jekyll template demo."
+  ben:
+    name: Ben
+    display_name: Ben
+    gravatar: 41620ba1d1acb7bbe44682aa171186ad
+    email: hi@benkammerling.com
+    web: http://www.benkammerling.com/
+    instagram: https://instagram.com/bkammerling
+    github: https://github.com/bkammerling
+    description: "Web enthusiast, passionate about making digital experiences more human and more fun!"
   john:
     name: John
     display_name: John
