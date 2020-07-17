@@ -29,24 +29,24 @@ jQuery(document).ready(function($){
         }
       }
     });
-	
-	
+
+
 	// toggle comments
-    $('.show-comments').on('click', function() {  
-		$('#comments').toggleClass('comments--show');		
+    $('.show-comments').on('click', function() {
+		$('#comments').toggleClass('comments--show');
 	});
 
 	//toggle search
-	$('.show-search').on('click', function() {  
-		$('.bd-search').toggleClass('search--show');		
+	$('.show-search').on('click', function() {
+		$('.bd-search').toggleClass('search--show');
 	});
-    
+
     // spoilers
      $(document).on('click', '.spoiler', function() {
         $(this).removeClass('spoiler');
      });
-    
- });   
+
+ });
 
 // deferred style loading
 var loadDeferredStyles = function () {
@@ -64,10 +64,13 @@ if (raf) raf(function () {
 else window.addEventListener('load', loadDeferredStyles);
 
 
+/*
 // Reset animations on page: body.preload
 setTimeout(function(){
 	document.body.className="";
 },500);
+*/
+
 
 // Open/close navigation when clicked .nav-icon
 $(document).ready(function(){
@@ -112,7 +115,7 @@ $(document).ready(function(){
 });
 
 $(document).keyup(function(e) {
-	if (e.keyCode == 27) { 
+	if (e.keyCode == 27) {
 		$(".nav-icon").removeClass('active');
 		$("#menu").removeClass('active');
 		$("#blackover-nav").removeClass('active');
@@ -128,7 +131,7 @@ return 'ontouchstart' in document.documentElement
 		|| navigator.msMaxTouchPoints > 0;
 }
 
-if (hasTouch()) { 
+if (hasTouch()) {
 	try {
 		for (var si in document.styleSheets) {
 			var styleSheet = document.styleSheets[si];
@@ -167,9 +170,7 @@ $(document).ready(function(){
 
 
 // DOCS
-
 $(document).ready(function(){
-    
 
      //Check to see if the back-menu is in the div
     $(window).scroll(function(){
