@@ -1,11 +1,11 @@
 # Site
 name: "Ben Kammerling"
 title: "Ben Kammerling - Tech Guy"
-description: "Exploring the fabulous world of tech, for humans and business. Cycling, tea, and food too!"
+description: "Exploring the fabulous world of web tech, for humans and business. Maybe some travel & food too!"
 logo: 'assets/images/logo-3d.svg'
 favicon: 'assets/images/logo.png'
 baseurl: ""
-google_analytics: 'UA-xxxxxxxx-1'
+google_analytics: 'UA-46634104-2'
 include: ["_pages"]
 permalink: /:title/
 email: hi@benkammerling.com
