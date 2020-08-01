@@ -1,0 +1,37 @@
+body.trippin {
+    footer.footer {
+      display: none;
+    }
+}
+
+body div.site-content .blog-grid-item .card .img-thumb {
+  object-position: center;
+}
+
+.video-container {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  video {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+  }
+}
+
+.video-selector {
+  position: absolute;
+  bottom: 28px;
+  right: 40px;
+  i {
+    margin: 0 20px;
+    color: white;
+    font-size: 29px;
+    cursor: pointer;
+    transition: transform .4s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

@@ -1,0 +1,26 @@
+
+{% include head.html %}
+
+<!-- Begin Sidebar Navigation
+================================================== -->
+
+<div class="sidebar">
+</div>
+<div class="nav-icon">
+    <div class="hamburger-bar"></div>
+</div>
+<div id="blackover-nav" class="blackover"></div>
+
+{% include navigation.html %}
+
+{% include search-lunr.html %}
+
+
+<!-- End Sidebar Navigation
+================================================== -->
+
+<div class="content">
+  {{ content }}
+</div>
+
+{% include footer.html %}

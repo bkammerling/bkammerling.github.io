@@ -1,15 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="description" content="{{ site.description }}">
-    
-    <script src="{{ "/js/jquery-2.2.4.min.js" | prepend: site.baseurl }}"></script>
-    <script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
-    
-    <link rel="stylesheet" href="{{ "/css/skeleton.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
+
+<title>{{ page.title }} | {{site.name}}</title>
+
+{% seo %}
+
+<link href="{{ site.baseurl }}/assets/css/prism.css" rel="stylesheet">
+
+<link href="{{ site.baseurl }}/assets/css/theme.css" rel="stylesheet">
+
+<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/a0f5d839b4.js" crossorigin="anonymous"></script>
+
 </head>
+
+{% if jekyll.environment == 'production' %}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{{site.google_analytics}}');
+</script>
+{% endif %}
+
+{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
+<body class="{{ page.permalink | remove_first: '/' }}">
+	<!-- defer loading of font and font awesome -->
+	<noscript id="deferred-styles">
+		<link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
+	</noscript>

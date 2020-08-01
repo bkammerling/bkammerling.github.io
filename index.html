@@ -1,35 +1,23 @@
 ---
 layout: default
+title: Home
+image: assets/images/social-image.png
+description: |-
+  "Ben is a pretty great guy. Incredibly handsome but with the brains too. He's a bit of a web nerd though." - One of Ben's ex-girlfriends
 ---
 
-<div class="home">
-  
-  <div class="row">
-    <div class="two columns">
-      <img class="me-img" src="uploads/me.jpg" alt="profile photo of Ben Kammerling" />
-    </div>
-    <div class="ten columns">
-      <h1>Hey, Hallo, Hola, Ciao, I'm Ben</h1>
-      <p>Welcome. Mi casa es tu casa. Make yourself at home.</p>
-      <p>Who am I? Well I'm one of you. I also make websites, play guitar, travel and ride <i class="fa fa-bicycle"></i>, sometimes at the same time. I like to take long walks, drink <i class="fa fa-coffee"></i> and eat cakes. I'm also a big fan of sloths.</p>
-    </div>
-  </div>
-  
-  <hr>
-  
-  <h2 class="page-heading editable">Stuff I Wrote</h2>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <p>{{ post.excerpt }}</p>
-      </li>
+<!-- Posts Index
+================================================== -->
+<div class="blog-grid-container">
+    {% for post in paginator.posts %}
+        {% include postbox.html %}
     {% endfor %}
-  </ul>
+</div>
 
+<!-- Pagination
+================================================== -->
+<div class="bottompagination">
+<span class="navigation" role="navigation">
+    {% include pagination.html %}
+</span>
 </div>
